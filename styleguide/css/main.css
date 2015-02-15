@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-regular-webfont.eot');
+    src: url('fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-bold-webfont.eot');
+    src: url('fonts/librebaskerville-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-bold-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-bold-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-bold-webfont.svg#libre_baskervillebold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-italic-webfont.eot');
+    src: url('fonts/librebaskerville-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-italic-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-italic-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: LibreBaskerville, serif;
+    background-color: #f2f2f2;
+    margin: 0em;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0.5em 0em;
+}
+
+h2 {
+    font-style: italic;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+code {
+    background-color: #feffe1;
+  /*  padding: 0.5em 0.75em;*/
+}
+
+textarea {
+    font-family: LibreBaskerville, serif;
+}
+
+section {
+
+}
+
+.header {
+    background-color: #0a0604;
+    position: relative;
+    width: 100%;
+    /*height: 4em;*/
+    color: #7e7c7b;
+    text-align: right;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.searchBar {
+    width: 15em;
+    border-bottom: #7e7c7b 1px solid;
+    display: inline-block;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/titleBanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 3em 0 12em 0;
+    position: relative;
+}
+
+.mainMenu {
+    margin: 3em auto;
+    position: relative;
+}
+
+.menuItem {
+    margin: 0 4em;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a.menuItem:hover {
+    text-decoration: underline;
+}
+
+.scrollPrompt {
+    position: relative;
+    text-align: center;
+    margin-top: -2em;
+}
+
+.shadedArea {
+    background-color: #7E7C7B;
+    padding: 2em;
+}
+
+.footer {
+    background-color: #0a0604;
+    position: relative;
+    bottom: 0em;
+    margin: 0em auto;
+    padding: 3em;
+    width: 100%;
+    text-align: center;
+    color: #7e7c7b;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    
+
+.footerSection {
+    display: inline-block;
+    margin: 0em 4em;
+}
+
+.footer p {
+    margin: 0em;
+    padding: 0em;
+}
+
+.footer nav a {
+    display: block;
+    text-decoration: none;
+    color: #7e7c7b;
+}
+
+.footer nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+p.important {
+    font-size: 1.25em;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #f2f2f2;
+    background-color: #0a0604;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in;
+}
+
+a.button:hover, a.button:focus {
+    background-color: #261610;
+    text-decoration: underline;
+}
+
+a.button-warning {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #f2f2f2;
+    background-color: #8C0F31;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in;
+}
+
+a.button-warning:hover, a.button-warning:focus {
+    background-color: #872541;
+    text-decoration: underline;
+}
+
+#searchBar {
+    background: none;
+    border: none;
+    text-align: right;
+    color: #7e7c7b;
+    font-family: LibreBaskerville, serif;
+    font-size: 1em;
+    border-bottom: #7e7c7b 1px solid;
+    width: 16em;
+}
+
+#searchBar:focus {
+    outline: none;}
+
+#bannerLogo {
+    max-width: 100%;
+}

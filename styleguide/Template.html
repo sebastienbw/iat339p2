@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Style Guide Template</title>
+		<link href="css/main.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<section id="headers">
+			<div class="header">
+				<input id="searchBar" onfocus="if(this.value == 'search') { this.value = ''; }" onfocusout="if(this.value == '') { this.value = 'search'; }" value="search"></input>
+				<!-- <div id="searchBar">
+					<p>search</p>
+				</div> -->
+			</div>
+		</section>
+
+		<section id="banners">
+			<div class="banner">
+				<img id="bannerLogo" src="img/ipcLogo.png">
+				<nav class="mainMenu">
+					<a class="menuItem" href="">PADDLES</a>
+					<a class="menuItem" href="">CUSTOMIZE</a>
+					<a class="menuItem" href="">MATERIALS</a>
+					<a class="menuItem" href="">HISTORY</a>
+				</nav>
+			</div>
+			<div class="scrollPrompt">
+				<img src="img/scrollPromptMd.png">
+			</div>
+		</section>
+
+		<section id="text">
+			<h1>Main Title Heading</h1>
+			<p class="important">Some important paragraph text to form an introduction to the section. </p>
+			<code>&lt;p class ="important"&gt;Important pragraph text here&lt;/p&gt;</code>
+			<h2>A Section Subheading</h2>
+			<h3>Specific Topic Subheading</h3>
+		</section>
+
+		<section id="focus">
+			<div class="shadedArea">
+				<code>&lt;div class="shadedArea"&gt;Content here&lt;/div&gt;</code>
+				<h2>A Very Special Title</h2>
+				<p>...with a little bit of text. An image will likely be featured in this area as well</p>
+			</div>
+		</section>
+
+		<section id="buttons">
+			<h2>Default Button Style</h2>
+			<h3>CSS selector:</h3>
+			<p>'a.button'</p>
+			<p>'a.button-warning'</p>
+			<h3>Sample code:</h3>
+			<code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code><br>
+			<code>&lt;a href="#" class="button-warning"&gt;Warning Button&lt;/a&gt;</code>
+			<h3>Rendered elements:</h3>
+			<a class="button" href="#">Default Button</a>
+			<a class="button-warning" href="#">Warning Button</a>
+		</section>
+
+		<section id="textAreas">
+			<h2>Form Fields</h2>
+			<div>
+				<textarea>Some prompt text</textarea>
+			</div>
+			<div>
+				<input type="radio" name="material" value="pine">Pine<br>
+				<input type="radio" name="material" value="cherry">Cherry
+			</div>		
+		</section>
+
+		<section id="footers">
+			<div class="footer">
+				<div class="footerSection">
+					<h3>FOOTER TITLE</h3>
+					<nav>
+						<a href="">option</a>
+						<a href="">option</a>
+						<a href="">option</a>
+					</nav>
+				</div>
+				<div class="footerSection">
+					<img id="footerLogo" src="img/ipcLogoFooter.png">
+				</div>
+				<div class="footerSection">
+					<h3>FOOTER TITLE</h3>
+					<nav>
+						<a href="">option</a>
+						<a href="">option</a>
+						<a href="">option</a>
+					</nav>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
