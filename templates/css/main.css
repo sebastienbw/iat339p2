@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-regular-webfont.eot');
+    src: url('fonts/librebaskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-regular-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-regular-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-regular-webfont.svg#libre_baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-bold-webfont.eot');
+    src: url('fonts/librebaskerville-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-bold-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-bold-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-bold-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-bold-webfont.svg#libre_baskervillebold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('fonts/librebaskerville-italic-webfont.eot');
+    src: url('fonts/librebaskerville-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-italic-webfont.woff') format('woff'),
+         url('fonts/librebaskerville-italic-webfont.ttf') format('truetype'),
+         url('fonts/librebaskerville-italic-webfont.svg#libre_baskervilleitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    font-family: LibreBaskerville, serif;
+    background-color: #f2f2f2;
+    margin: 0em;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0.5em 0em;
+}
+
+h2 {
+    font-style: italic;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+code {
+    background-color: #feffe1;
+  /*  padding: 0.5em 0.75em;*/
+}
+
+textarea {
+    font-family: LibreBaskerville, serif;
+    font-size: 1em;
+}
+
+select {
+    font-family: LibreBaskerville, serif;
+    font-size: 1em;
+}
+
+form {
+
+}
+
+section {
+
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: #0a0604;
+    /*position: relative;*/
+    width: 100%;
+    /*height: 4em;*/
+    color: #7e7c7b;
+    text-align: right;
+    padding: 0.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.header-search {
+    width: 15em;
+    float: right;
+    clear: both;
+    margin-right: 1em;
+    /*border-bottom: #7e7c7b 1px solid;*/
+    /*display: inline-block;*/
+}
+.header-search-field {
+    background: none;
+    border: none;
+    text-align: right;
+    color: #7e7c7b;
+    font-family: LibreBaskerville, serif;
+    font-size: 1em;
+    border-bottom: #7e7c7b 1px solid;
+    width: 16em;
+    outline: none;
+}
+
+.banner {
+    background-image: url("../img/titleBannerShort.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: inherit;
+    flex-wrap: wrap;
+}
+
+.banner-masthead {
+    padding: 1em 0;
+}
+
+.banner-nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.banner-nav-item {
+    flex-grow: 1;
+    margin: auto 0;
+    text-align: center;
+}
+
+.banner-nav-item a {
+    color: #F2F2F2;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.banner-nav-item a:hover {
+    text-decoration: underline;
+}
+
+.showcase {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.showcase-item {
+    /*border: 5px solid white;*/
+    width: 33.333%;
+    position: relative;
+}
+
+.showcase-item.dark {
+    background-color: #151210;
+}
+
+.showcase-item.light {
+    background-color: #291E1A;
+}
+
+.showcase-item:before {
+    content: "";
+    padding-top: 100%;
+    display: block; 
+}
+
+.showcase-item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.knowledge {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.knowledge-item {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.knowledge-item-image {
+    flex-grow: 1;
+    /*width: 25%;*/
+}
+
+.knowledge-item-image.dark {
+    background-color: #151210;
+}
+
+.knowledge-item-image.light {
+    background-color: #291E1A;
+}
+
+.knowledge-item-image:before {
+    content: "";
+    padding-top: 100%;
+    display: block; 
+}
+
+.knowledge-item-content {
+    flex-grow: 2;
+    /*width: auto;*/
+    /*height: 100px;*/
+}
+
+.knowledge-item-content.dark {
+    background-color: #373532;
+}
+
+.knowledge-item-content.light {
+    background-color: #4B3F3C;
+}
+
+.footer {
+    display: inherit;
+    flex-wrap: wrap;
+    background-color: #0a0604;
+    /*position: relative;*/
+    bottom: 0em;
+    margin: 0em auto;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    color: #7e7c7b;
+}
+
+.footer-item {
+    flex-grow: 5;
+    margin: auto 0;
+}
+
+.footer-item nav a {
+    display: block;
+    text-decoration: none;
+    color: #7e7c7b;
+    margin: 0em;
+    padding: 0em;
+}
+
+.footer-item nav a:hover {
+    text-decoration: underline;
+    color: #f2f2f2;
+}
+
+.footer-item-logo {
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+/*.banner {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/titleBanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 3em 0 12em 0;
+    position: relative;
+}*/
+
+.mainMenu {
+    margin: 3em auto;
+    position: relative;
+}
+
+.scrollPrompt {
+    position: relative;
+    text-align: center;
+    margin-top: -2em;
+}
+
+.shadedArea {
+    background-color: #7E7C7B;
+    padding: 2em;
+}
+
+/*.footer {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+    
+
+.footerSection {
+    display: inline-block;
+    margin: 0em 4em;
+}
+
+/*.footer p {
+    margin: 0em;
+    padding: 0em;
+}*/
+
+
+
+p.important {
+    font-size: 1.25em;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #f2f2f2;
+    background-color: #0a0604;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in;
+}
+
+a.button:hover, a.button:focus {
+    background-color: #261610;
+    text-decoration: underline;
+}
+
+a.button-warning {
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    color: #f2f2f2;
+    background-color: #8C0F31;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s ease-in;
+    transition: background-color 0.1s ease-in;
+}
+
+a.button-warning:hover, a.button-warning:focus {
+    background-color: #872541;
+    text-decoration: underline;
+}
