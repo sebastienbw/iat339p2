@@ -44,7 +44,7 @@ body {
 h1 {
     font-weight: bold;
     font-size: 2.5em;
-    margin: 0.5em 0em;
+    margin-bottom: 0em;
 }
 
 h2 {
@@ -127,7 +127,7 @@ section {
 }
 
 .banner {
-    background-image: url("../img/titleBannerShort.jpg");
+    background-image: url("../img/titleBannerWide.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,13 +140,22 @@ section {
     padding: 1em 0;
 }
 
+.banner-masthead.primary {
+    padding: 3em 0;
+    margin: 0 auto;
+}
+
 .banner-nav {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 6em;
+}
 
+.banner-nav.primary {
+    padding-bottom: 3em;
 }
 
 .banner-nav-item {
@@ -164,6 +173,48 @@ section {
 
 .banner-nav-item a:hover {
     text-decoration: underline;
+}
+
+.welcome {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.welcome-message {
+    padding: 0 12em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.welcome-message p {
+    font-weight: bold;
+}
+
+.welcome-details {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #7E7C7B;
+    padding: 0 6em;
+}
+
+.welcome-details-border {
+    flex-grow: 1;
+    background-color: black;
+}
+
+.welcome-details-item {
+    padding: 2em 4em;
+    flex-grow: 2;
+    flex-basis: 28em;
+    /*text-align: center;*/
+}
+
+.welcome-details-item img {
+    /*max-width: 100%;*/
+    margin: 0 auto;
+    display: block;
 }
 
 .showcase {
@@ -243,6 +294,40 @@ section {
 }
 
 .knowledge-item-content.light {
+    background-color: #4B3F3C;
+}
+
+.customizer {
+    display: inherit;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customizer-viewer {
+    flex-grow: 1;
+    background-color: #151210;
+}
+
+.customizer-viewer:before {
+    content: "";
+    padding-top: 100%;
+    display: block; 
+}
+
+.customizer-editor {
+    flex-grow: 2;
+}
+
+.customizer-editor-item {
+    display: block;
+    padding: 1em;
+}
+
+.customizer-editor-item.dark {
+    background-color: #373532;
+}
+
+.customizer-editor-item.light {
     background-color: #4B3F3C;
 }
 
