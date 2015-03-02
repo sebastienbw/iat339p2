@@ -171,7 +171,7 @@ section {
     margin: auto 0;
     text-align: center;
     cursor: pointer;
-    cursor: hand;
+    cursor: hand;   
 }
 
 .banner-nav-item p {
@@ -394,13 +394,18 @@ section {
 
 .knowledge-item-image {
     /*flex-grow: 1;*/
-    width: 35%;
+    width: 30%;
+    padding: 2em;
 }
 
 .knowledge-item-image img {
     /*flex-grow: 1;*/
     width: 100%;
-    padding: 2em;
+}
+.knowledge-item-image p {
+    /*flex-grow: 1;*/
+    text-align: center;
+    font-weight: bold;
 }
 
 /*.knowledge-item-image:before {
@@ -410,7 +415,7 @@ section {
 }*/
 
 .knowledge-item-content {
-    width: 65%;
+    width: 70%;
     height: 100%;
 }
 
