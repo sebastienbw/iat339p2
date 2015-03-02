@@ -394,7 +394,13 @@ section {
 
 .knowledge-item-image {
     /*flex-grow: 1;*/
-    width: 25%;
+    width: 35%;
+}
+
+.knowledge-item-image img {
+    /*flex-grow: 1;*/
+    width: 100%;
+    padding: 2em;
 }
 
 /*.knowledge-item-image:before {
@@ -404,7 +410,7 @@ section {
 }*/
 
 .knowledge-item-content {
-    width: 75%;
+    width: 65%;
     height: 100%;
 }
 
