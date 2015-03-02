@@ -128,7 +128,7 @@ section {
 
 .banner {
     background-image: url("../img/titleBannerWide.jpg");
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -137,12 +137,18 @@ section {
 }
 
 .banner-masthead {
-    padding: 1em 0;
+    padding: 2em 0;
+    margin: 0 auto;
+}
+
+.banner-masthead:hover {
+    cursor: pointer;
+    cursor: hand;
 }
 
 .banner-masthead.primary {
-    padding: 3em 0;
-    margin: 0 auto;
+    padding: 3em 0 3em 0;
+    
 }
 
 .banner-nav {
@@ -152,28 +158,42 @@ section {
     flex-wrap: wrap;
     width: 100%;
     padding: 0 6em;
+    padding-bottom: 1em;
 }
 
 .banner-nav.primary {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 .banner-nav-item {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
+    width: 25%;
     margin: auto 0;
     text-align: center;
+    cursor: pointer;
+    cursor: hand;
 }
 
-.banner-nav-item a {
+.banner-nav-item p {
     color: #F2F2F2;
     text-decoration: none;
     display: inline-block;
-    
+    padding: 2em;
+    margin: 0;
 }
 
-.banner-nav-item a:hover {
-    text-decoration: underline;
+.banner-nav-item:hover {
+    color: #F2F2F2;
+    background-color: rgba(10, 6, 4, 0.3);
+    border-radius: 0.25em;
+    cursor: hand;
 }
+
+/*.banner-nav-item a:hover {
+    color: #F2F2F2;
+    background-color: rgba(10, 6, 4, 0.3);
+    border-radius: 0.25em;
+}*/
 
 .welcome {
     display: inherit;
@@ -183,8 +203,10 @@ section {
 
 .welcome-message {
     padding: 0 12em;
-    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
     text-align: center;
+
 }
 
 .welcome-message p {
@@ -196,7 +218,7 @@ section {
     flex-wrap: wrap;
     width: 100%;
     background-color: #7E7C7B;
-    padding: 0 6em;
+    padding: 2em 6em;
 }
 
 .welcome-details-border {
@@ -207,9 +229,14 @@ section {
 .welcome-details-item {
     padding: 2em 4em;
     flex-grow: 2;
-    flex-basis: 28em;
-    /*text-align: center;*/
+    flex-basis: 29em;
+    text-align: center;
 }
+
+.welcome-details-item h2 {
+    text-align: center;
+}
+
 
 .welcome-details-item img {
     /*max-width: 100%;*/
@@ -227,14 +254,31 @@ section {
     /*border: 5px solid white;*/
     width: 33.333%;
     position: relative;
+    background-size: cover;
 }
 
-.showcase-item.dark {
-    background-color: #151210;
+.showcase-item.one {
+    background-image: url("../img/paddle-bg1.jpg");
 }
 
-.showcase-item.light {
-    background-color: #291E1A;
+.showcase-item.two {
+    background-image: url("../img/paddle-bg2.jpg");
+}
+
+.showcase-item.three {
+    background-image: url("../img/paddle-bg3.jpg");
+}
+
+.showcase-item.four {
+    background-image: url("../img/paddle-bg4.jpg");
+}
+
+.showcase-item.five {
+    background-image: url("../img/paddle-bg5.jpg");
+}
+
+.showcase-item.six {
+    background-image: url("../img/paddle-bg6.jpg");
 }
 
 .showcase-item:before {
@@ -251,6 +295,59 @@ section {
     right: 0;
 }
 
+.showcase-item-content h2 {
+    position: absolute;
+    margin-left: 1em;
+    font-size: 2em;
+    color: #F2F2F2;
+}
+
+.showcase-item-content img {
+    position: absolute;
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.showcase-item-content img:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.showcase-item-content img:hover ~ .showcase-item-content-details {
+    visibility: visible;
+}
+
+.showcase-item-content p {
+    /*opacity: 0;*/
+    margin-top: 0;
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-bottom: 1.5em;
+    width: 100%;
+    color: #F2F2F2;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.showcase-item-content a:hover {
+    visibility: visible;
+}
+
+.showcase-item-content a:hover ~ img {
+    background-color: rgba(0,0,0,0);
+}
+
+.showcase-item-content-details {
+    visibility: hidden;
+    /*width: 100%;
+    height: 100%;*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+
+}
+
 .knowledge {
     display: inherit;
     flex-wrap: wrap;
@@ -261,40 +358,83 @@ section {
     display: inherit;
     flex-wrap: wrap;
     width: 100%;
+    height: 25%;
     padding: 0;
 }
 
+.maple {
+    background-image: url("../img/maple.jpg");
+    background-size: 100% auto;
+}
+
+.ash {
+    background-image: url("../img/ash.jpg");
+    background-size: 100% auto;
+}
+
+.cherry {
+    background-image: url("../img/cherry.jpg");
+    background-size: 100% auto;
+}
+
+.basswood {
+    background-image: url("../img/basswood.jpg");
+    background-size: 100% auto;
+}
+
+.spruce {
+    background-image: url("../img/spruce.jpg");
+    background-size: 100% auto;
+}
+
+.butternut {
+    background-image: url("../img/butternut.jpg");
+    background-size: 100% auto;
+}
+
 .knowledge-item-image {
-    flex-grow: 1;
-    /*width: 25%;*/
+    /*flex-grow: 1;*/
+    width: 25%;
 }
 
-.knowledge-item-image.dark {
-    background-color: #151210;
-}
-
-.knowledge-item-image.light {
-    background-color: #291E1A;
-}
-
-.knowledge-item-image:before {
+/*.knowledge-item-image:before {
     content: "";
     padding-top: 100%;
     display: block; 
-}
+}*/
 
 .knowledge-item-content {
-    flex-grow: 2;
-    /*width: auto;*/
+    width: 75%;
+    height: 100%;
+}
+
+.knowledge-item-content-shader {
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1em 2em;
+}
+
+.knowledge-item-content-shader h2 {
+    font-size: 2em;
+    /*flex-grow: 2;*/
+    /*height: 75%;*/
+
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    /*padding: 1em 2em;*/
+    /*color: #F2F2F2;*/
     /*height: 100px;*/
 }
 
-.knowledge-item-content.dark {
-    background-color: #373532;
-}
-
-.knowledge-item-content.light {
-    background-color: #4B3F3C;
+.knowledge-item-content-shader p {
+    /*flex-grow: 2;*/
+    /*height: 75%;*/
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    /*margin-bottom: 0.25em;*/
+    /*padding: 1em 2em;*/
+    /*color: #F2F2F2;*/
+    /*height: 100px;*/
 }
 
 .customizer {
@@ -338,7 +478,7 @@ section {
     /*position: relative;*/
     bottom: 0em;
     margin: 0em auto;
-    padding: 1em 0;
+    padding: 5em 0;
     width: 100%;
     text-align: center;
     color: #7e7c7b;
@@ -432,7 +572,7 @@ a.button {
 
 a.button:hover, a.button:focus {
     background-color: #261610;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 a.button-warning {
