@@ -220,7 +220,7 @@ section {
 }
 
 .welcome-message {
-    padding: 0 12em;
+    padding: 0 6em;
     padding-top: 1em;
     padding-bottom: 2em;
     text-align: center;
@@ -244,9 +244,9 @@ section {
 }
 
 .welcome-details-item {
-    padding: 2em 4em;
+    padding: 2em 2em;
     flex-grow: 2;
-    flex-basis: 29em;
+    flex-basis: 26em;
     text-align: center;
 }
 
@@ -411,14 +411,14 @@ section {
 .knowledge-item-content {
     width: 70%;
     min-height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .knowledge-item-content-shader {
-    height: 100%;
+    min-height: 100%;
     /*background-color: rgba(0,0,0,0.3);*/
     padding: 1em 2em;
-    bottom: 0;
+    /*bottom: 0;*/
 }
 
 .knowledge-item-content-shader h2 {
@@ -529,6 +529,7 @@ section {
 .footer-item {
     flex-grow: 5;
     margin: auto 0;
+    /*flex-basis: 20em;*/
 }
 
 .footer-item nav a {
@@ -547,6 +548,7 @@ section {
 .footer-item-logo {
     flex-grow: 1;
     margin: auto 0;
+    /*flex-basis: 20em;*/
 }
 
 /*.banner {
@@ -577,27 +579,15 @@ section {
     padding: 2em;
 }
 
-/*.footer {
-    
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}*/
-    
-
-.footerSection {
-    display: inline-block;
-    margin: 0em 4em;
+.maple {
+    /*background-color: rgba(0,0,0,0.3);*/
+    background-image: url("../img/maple.jpg");
+    background-size: 100% auto;
 }
 
-/*.footer p {
-    margin: 0em;
-    padding: 0em;
-}*/
-
-
-.maple {
-    background-image: url("../img/maple.jpg");
+.knowledge-item-content.maple {
+    /*background-color: rgba(0,0,0,0.3);*/
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/maple.jpg) no-repeat;
     background-size: 100% auto;
 }
 
@@ -606,8 +596,18 @@ section {
     background-size: 100% auto;
 }
 
+.knowledge-item-content.ash {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/ash.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
 .cherry {
     background-image: url("../img/cherry.jpg");
+    background-size: 100% auto;
+}
+
+.knowledge-item-content.cherry {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/cherry.jpg) no-repeat;
     background-size: 100% auto;
 }
 
@@ -616,13 +616,28 @@ section {
     background-size: 100% auto;
 }
 
+.knowledge-item-content.basswood {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/basswood.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
 .spruce {
     background-image: url("../img/spruce.jpg");
     background-size: 100% auto;
 }
 
+.knowledge-item-content.spruce {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/spruce.jpg) no-repeat;
+    background-size: 100% auto;
+}
+
 .butternut {
     background-image: url("../img/butternut.jpg");
+    background-size: 100% auto;
+}
+
+.knowledge-item-content.butternut {
+    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/butternut.jpg) no-repeat;
     background-size: 100% auto;
 }
 
@@ -660,4 +675,128 @@ a.button-warning {
 a.button-warning:hover, a.button-warning:focus {
     background-color: #872541;
     text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+    .showcase-item {
+        /*border: 5px solid white;*/
+        width: 50%;
+        position: relative;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 720px) {
+    .showcase-item {
+        /*border: 5px solid white;*/
+        width: 100%;
+        position: relative;
+        background-size: cover;
+    }
+
+    .context {
+        display: relative;
+        width: 100%;
+        padding: 0 2em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .knowledge-item-image {
+        width: 100%;
+        margin-bottom: -2em;
+        /*padding: 2em;*/
+        /*height: auto;*/
+        /*background-color: rgba(0,0,0,0.5);*/
+    }
+
+    .knowledge-item-content {
+        width: 100%;
+        min-height: 100%;
+        /*background-color: rgba(0,0,0,0.3);*/
+    }
+
+    .knowledge-item-content.maple {
+        /*background-color: rgba(0,0,0,0.3);*/
+        background-image: url("../img/maple.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+
+    }
+
+    .knowledge-item-content.ash {
+        background-image: url("../img/ash.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+
+    }
+
+    .knowledge-item-content.cherry {
+        background-image: url("../img/cherry.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+
+    }
+
+    .knowledge-item-content.basswood {
+        background-image: url("../img/basswood.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+    }
+
+    .knowledge-item-content.spruce {
+        background-image: url("../img/spruce.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+
+    }
+
+    .knowledge-item-content.butternut {
+        background-image: url("../img/butternut.jpg");
+        background-size: 100% auto;
+        background-position: center middle;
+
+    }
+
+    .welcome-message {
+        padding: 0 2em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        text-align: center;
+    }
+
+    .welcome-details {
+        display: inherit;
+        /*flex-wrap: wrap;*/
+        width: 100%;
+        background-color: #7E7C7B;
+        padding: 2em 0em;
+    }
+    .welcome-details-item {
+        /*padding: 2em 4em;*/
+        /*flex-grow: 2;*/
+        /*flex-basis: 29em;*/
+        text-align: center;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footer-item {
+        visibility: hidden;
+        /*flex-basis: 20em;*/
+    }
+    .footer {
+    display: inherit;
+    /*flex-wrap: wrap;*/
+    background-color: #0a0604;
+    /*position: relative;*/
+    bottom: 0em;
+    margin: 0em auto;
+    padding: 2em 0;
+    width: 100%;
+    text-align: center;
+    color: #7e7c7b;
+}
 }
