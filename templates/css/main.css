@@ -729,6 +729,7 @@ img {
 .footer-item {
     flex-grow: 5;
     margin: auto 0;
+    visibility: hidden;
     /*flex-basis: 20em;*/
 }
 
