@@ -14,6 +14,12 @@
 				<div class="header-search">
 					<input class="header-search-field" onfocus="if(this.value == 'search') { this.value = ''; }" onfocusout="if(this.value == '') { this.value = 'search'; }" value="search"></input>
 				</div>
+				<div class="header-cart">
+					<a class="button" href="payment.html">
+						<p>0 </p>
+						<img id="cart" src="img/cart-empty.png">
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -21,18 +27,20 @@
 		<div class="box">
 			<div class="banner primary">
 				<img class="banner-masthead primary" onclick="location.href='home.html';" src="img/ipcLogoLg.png">
-				<nav class="banner-nav primary">
-					<div class="banner-nav-item primary" onclick="location.href='paddles.html';">
+				<nav class="banner-nav">
+					<div class="banner-nav-item" onclick="location.href='paddles.html';">
 						<p>PADDLES</p>
 					</div>
-					<div class="banner-nav-item primary"onclick="location.href='knowledge.html';">
+					<div class="banner-nav-item"onclick="location.href='materials.html';">
 						<p>MATERIALS</p>
 					</div>
-					<div class="banner-nav-item primary"onclick="location.href='construction.html';">
+					<div class="banner-nav-item"onclick="location.href='parts.html';">
 						<p>CONSTRUCTION</p>
 					</div>
 				</nav>
 			</div>
+			<!-- <div class="banner-scrollPrompt">
+			</div> -->
 		</div>
 
 		<!-- WELCOME -->
@@ -48,17 +56,21 @@
 				<div class="welcome-details">
 					<!-- <div class="welcome-details-border">
 					</div> -->
-					<div class="welcome-details-item">
-						<img src="img/detailsPaddles.png">
-						<h2>A Paddle for Any Occasion</h2>
-						<p>Browse our popular models, each can be customized to better suit your needs.</p>
-						<a class="button" href="paddles.html">Browse Paddles</a>
+					<div class="welcome-details-item paddles">
+						<div class="welcome-details-item-shader">
+							<img src="img/detailsPaddles.png">
+							<h2>A Paddle for Any Occasion</h2>
+							<p>Browse our popular models, each can be customized to better suit your needs.</p>
+							<a class="button" href="paddles.html">Browse Paddles</a>
+						</div>
 					</div>
-					<div class="welcome-details-item">
-						<img src="img/detailsBowsaw.png">
-						<h2>A Tradition of Craftsmanship</h2>
-						<p>Learn about the materials we use and the kinds of paddles we make from them.</p>
-						<a class="button" href="knowledge.html">View Materials</a>
+					<div class="welcome-details-item materials">
+						<div class="welcome-details-item-shader">
+							<img src="img/detailsBowsaw.png">
+							<h2>A Tradition of Craftsmanship</h2>
+							<p>Learn about the materials we use and the kinds of paddles we make from them.</p>
+							<a class="button" href="materials.html">View Materials</a>
+						</div>
 					</div>
 					<!-- <div class="welcome-details-border">
 					</div> -->
@@ -78,7 +90,7 @@
 					</nav>
 				</div>
 				<div class="footer-item-logo">
-					<img id="footerLogo" src="img/ipcLogoFooter.png">
+					<a href="home.html"><img id="footerLogo" src="img/ipcLogoFooter.png" ></a>
 				</div>
 				<div class="footer-item">
 					<h3>TITLE</h3>

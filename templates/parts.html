@@ -14,6 +14,12 @@
 				<div class="header-search">
 					<input class="header-search-field" onfocus="if(this.value == 'search') { this.value = ''; }" onfocusout="if(this.value == '') { this.value = 'search'; }" value="search"></input>
 				</div>
+				<div class="header-cart">
+					<a class="button" href="payment.html">
+						<p>0 </p>
+						<img id="cart" src="img/cart-empty.png">
+					</a>
+				</div>
 			</div>
 		</div>
 
@@ -25,10 +31,10 @@
 					<div class="banner-nav-item" onclick="location.href='paddles.html';">
 						<p>PADDLES</p>
 					</div>
-					<div class="banner-nav-item"onclick="location.href='knowledge.html';">
+					<div class="banner-nav-item"onclick="location.href='materials.html';">
 						<p>MATERIALS</p>
 					</div>
-					<div class="banner-nav-item"onclick="location.href='construction.html';">
+					<div class="banner-nav-item"onclick="location.href='parts.html';">
 						<p>CONSTRUCTION</p>
 					</div>
 				</nav>
@@ -49,7 +55,7 @@
 			<div class="parts">
 				<div class="parts-content-shader">
 				</div>
-				<div class="knowledge-item">
+				<div id="grips" class="knowledge-item">
 
 					<div class="knowledge-item-image">
 						<img src="img/grips.png">
@@ -69,7 +75,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="knowledge-item">
+				<div id="shafts" class="knowledge-item">
 					<div class="knowledge-item-image">
 						<img src="img/shafts.png">
 						<p>top: oval shaft<br>
@@ -88,7 +94,7 @@
 		                </div>
 					</div>
 				</div>
-				<div class="knowledge-item">
+				<div id="blades" class="knowledge-item">
 					<div class="knowledge-item-image">
 						<img src="img/blades.png">
 						<p>left to right:<br>
@@ -107,7 +113,7 @@
 							</div>
 						</div>
 				</div>
-				<div class="knowledge-item">
+				<div id="tips" class="knowledge-item">
 					<div class="knowledge-item-image">
 						<img src="img/tips.png">
 						<p>left: resin tip<br>
