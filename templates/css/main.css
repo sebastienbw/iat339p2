@@ -168,6 +168,30 @@ img {
     
 }
 
+/*.hidden {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}*/
+
+#cartContents {
+    -webkit-transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.1s ease-in;
+    transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.1s ease-in;
+    position: absolute;
+    background-color: rgba(242,242,242,0.8);
+    padding: 1em;
+    z-index: 1;
+    right: 3em;
+    width: 0;
+    height: 0;
+    border-radius: 0.5em 0em 0.5em 0.5em;
+    opacity: 0;
+    text-align: center;
+    /*opacity: 1;*/
+}
+
+
+
 .banner {
     background-image: url("../img/titleBannerWide.jpg");
     background-position: center top;
@@ -468,7 +492,7 @@ img {
     position: absolute;
     /*text-align: right;*/
     width: 12.5em;
-    bottom: -50%;
+    bottom: -12em;
     right: 0;
     padding: 1em;
     background-color: rgba(0,0,0,0.5);
@@ -568,6 +592,7 @@ img {
 .parts {
     background-image: url("../img/partsBG.jpg");
     background-size: cover;
+    background-position: right;
     display: inherit;
     flex-wrap: wrap;
     width: 100%;
@@ -789,8 +814,8 @@ img {
 
 .knowledge-item-content.maple {
     /*background-color: rgba(0,0,0,0.3);*/
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/maple.jpg) no-repeat;
-    background-size: 100% auto;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/maple.jpg) repeat;
+    background-size: 100% auto
 }
 
 .ash {
@@ -799,7 +824,7 @@ img {
 }
 
 .knowledge-item-content.ash {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/ash.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/ash.jpg) repeat;
     background-size: 100% auto;
 }
 
@@ -809,7 +834,7 @@ img {
 }
 
 .knowledge-item-content.cherry {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/cherry.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/cherry.jpg) repeat;
     background-size: 100% auto;
 }
 
@@ -819,7 +844,7 @@ img {
 }
 
 .knowledge-item-content.basswood {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/basswood.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/basswood.jpg) repeat;
     background-size: 100% auto;
 }
 
@@ -829,7 +854,7 @@ img {
 }
 
 .knowledge-item-content.spruce {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/spruce.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/spruce.jpg) repeat;
     background-size: 100% auto;
 }
 
@@ -839,7 +864,7 @@ img {
 }
 
 .knowledge-item-content.butternut {
-    background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/butternut.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15)), url(../img/butternut.jpg) repeat;
     background-size: 100% auto;
 }
 
@@ -947,48 +972,6 @@ a.button-warning:hover, a.button-warning:focus {
         /*background-color: rgba(0,0,0,0.3);*/
     }
 
-    .knowledge-item-content.maple {
-        /*background-color: rgba(0,0,0,0.3);*/
-        background-image: url("../img/maple.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-
-    }
-
-    .knowledge-item-content.ash {
-        background-image: url("../img/ash.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-
-    }
-
-    .knowledge-item-content.cherry {
-        background-image: url("../img/cherry.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-
-    }
-
-    .knowledge-item-content.basswood {
-        background-image: url("../img/basswood.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-    }
-
-    .knowledge-item-content.spruce {
-        background-image: url("../img/spruce.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-
-    }
-
-    .knowledge-item-content.butternut {
-        background-image: url("../img/butternut.jpg");
-        background-size: 100% auto;
-        background-position: center middle;
-
-    }
-
     .welcome-message {
         padding: 0 2em;
         padding-top: 1em;
@@ -1019,15 +1002,15 @@ a.button-warning:hover, a.button-warning:focus {
         /*flex-basis: 20em;*/
     }
     .footer {
-    display: inherit;
-    /*flex-wrap: wrap;*/
-    background-color: #0a0604;
-    /*position: relative;*/
-    bottom: 0em;
-    margin: 0em auto;
-    padding: 2em 0;
-    width: 100%;
-    text-align: center;
-    color: #7e7c7b;
-}
+        display: inherit;
+        /*flex-wrap: wrap;*/
+        background-color: #0a0604;
+        /*position: relative;*/
+        bottom: 0em;
+        margin: 0em auto;
+        padding: 3em 0;
+        width: 100%;
+        text-align: center;
+        color: #7e7c7b;
+    }
 }
