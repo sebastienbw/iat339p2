@@ -590,7 +590,7 @@ img {
 }
 
 .parts {
-    background-image: url("../img/partsBG.jpg");
+    background-image: url("../img/partsBg.jpg");
     background-size: cover;
     background-position: right;
     display: inherit;
@@ -661,44 +661,6 @@ img {
     background-color: rgba(58, 42, 36, 0.7);
 }
 
-
-/*.parts-content-shader {
-    position: absolute;
-    width: 70%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    right: 0;
-    /*top: 0;*/
-}*/
-
-/*.parts-image {
-    width: 100%;
-}
-
-.parts-image img {
-    width: 25%;
-    display: inline;
-}
-
-
-.parts-diagrams {
-    position: relative;
-    height: 100%;
-    width: 25%;
-    background-color: rgba(0,0,0,0.5);
-    display: inline-block;
-}
-
-.parts-diagrams-image {
-    width: 100%;
-}
-
-.parts-content {
-    width: 75%;
-    height: 100%;
-    background-color: black;
-    display: inline;
-}*/
 .customizer {
     display: inherit;
     flex-wrap: wrap;
